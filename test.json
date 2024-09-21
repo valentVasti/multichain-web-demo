@@ -1,0 +1,73 @@
+{
+  "hex": "010000000176ff3826e5b237a5fddc37dadb0866a5c899f5c213419d518babdb14ab02c284020000006a473044022051f03b6eca1f3c4e6f2ffbf0f2173350bca03c5db1b53842619c5ff89e2602610220405c8be1fd33e245d91e237c5ab043b4c011a92bd66700c75c6104dda6082e1a01210251028d870f8f1c7d134b9bca46b6f758f9d85b40170cb65ce322d2af6d0f19e7ffffffff0300000000000000001976a914bdd727322b83ed32eaf4339dec1d23db133308c288ac0000000000000000a61473706b6564f32e1d23c772f8304dd8a9beafdbf6751973706b6b656d725f7265636f72645f323032345f30395f3036750573706b6602756a4c6b7b2453236904690a70617469656e745f6964690531323334356909646961676e6f736973690c687970657274656e73696f6e690974726561746d656e74690e6d656469636174696f6e2041424369056e6f7465736915466f6c6c6f772d757020696e2033206d6f6e74687300000000000000001976a9143ff19020ff1c8436d8b5b5bee63ad17adf29a25988ac00000000",
+  "txid": "bd89f942cfb9c47fc0506d63282863d33a38cefb4fbb74288629c9ac5fc2da90",
+  "version": 1,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "84c202ab14dbab8b519d4113c2f599c8a56608dbda37dcfda537b2e52638ff76",
+      "vout": 2,
+      "scriptSig": {
+        "asm": "3044022051f03b6eca1f3c4e6f2ffbf0f2173350bca03c5db1b53842619c5ff89e2602610220405c8be1fd33e245d91e237c5ab043b4c011a92bd66700c75c6104dda6082e1a01 0251028d870f8f1c7d134b9bca46b6f758f9d85b40170cb65ce322d2af6d0f19e7",
+        "hex": "473044022051f03b6eca1f3c4e6f2ffbf0f2173350bca03c5db1b53842619c5ff89e2602610220405c8be1fd33e245d91e237c5ab043b4c011a92bd66700c75c6104dda6082e1a01210251028d870f8f1c7d134b9bca46b6f758f9d85b40170cb65ce322d2af6d0f19e7"
+      },
+      "sequence": 4294967295
+    }
+  ],
+  "vout": [
+    {
+      "value": 0,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "OP_DUP OP_HASH160 bdd727322b83ed32eaf4339dec1d23db133308c2 OP_EQUALVERIFY OP_CHECKSIG",
+        "hex": "76a914bdd727322b83ed32eaf4339dec1d23db133308c288ac",
+        "reqSigs": 1,
+        "type": "pubkeyhash",
+        "addresses": ["1Sf9yAqcSdRDk3i3ofGxyQWy7siCvnmKTe5XZm"]
+      }
+    },
+    {
+      "value": 0,
+      "n": 1,
+      "scriptPubKey": {
+        "asm": "73706b6564f32e1d23c772f8304dd8a9beafdbf6 OP_DROP 73706b6b656d725f7265636f72645f323032345f30395f3036 OP_DROP 73706b6602 OP_DROP OP_RETURN 7b2453236904690a70617469656e745f6964690531323334356909646961676e6f736973690c687970657274656e73696f6e690974726561746d656e74690e6d656469636174696f6e2041424369056e6f7465736915466f6c6c6f772d757020696e2033206d6f6e746873",
+        "hex": "1473706b6564f32e1d23c772f8304dd8a9beafdbf6751973706b6b656d725f7265636f72645f323032345f30395f3036750573706b6602756a4c6b7b2453236904690a70617469656e745f6964690531323334356909646961676e6f736973690c687970657274656e73696f6e690974726561746d656e74690e6d656469636174696f6e2041424369056e6f7465736915466f6c6c6f772d757020696e2033206d6f6e746873",
+        "type": "nulldata"
+      },
+      "items": [
+        {
+          "type": "stream",
+          "name": "patient-1-records-new",
+          "createtxid": "f6dbafbea9d84d30f872c7231d2ef364fe698fb222de13f5b112e8aaf5181bfa",
+          "streamref": "71-266-56310",
+          "publishers": ["19eFdzWCuf9KG2RV5Xk9znegynBjRQLRHip9QP"],
+          "keys": ["emr_record_2024_09_06"],
+          "offchain": false,
+          "data": {
+            "json": {
+              "patient_id": "12345",
+              "diagnosis": "hypertension",
+              "treatment": "medication ABC",
+              "notes": "Follow-up in 3 months"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "value": 0,
+      "n": 2,
+      "scriptPubKey": {
+        "asm": "OP_DUP OP_HASH160 3ff19020ff1c8436d8b5b5bee63ad17adf29a259 OP_EQUALVERIFY OP_CHECKSIG",
+        "hex": "76a9143ff19020ff1c8436d8b5b5bee63ad17adf29a25988ac",
+        "reqSigs": 1,
+        "type": "pubkeyhash",
+        "addresses": ["19eFdzWCuf9KG2RV5Xk9znegynBjRQLRHip9QP"]
+      }
+    }
+  ],
+  "blockhash": "00afe645858d4e7b1b6574a38d242a10f39e06d03188f9dcbe3c74e65ea89ebe",
+  "confirmations": 11,
+  "time": 1725686056,
+  "blocktime": 1725686056
+}
