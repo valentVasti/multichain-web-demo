@@ -1,11 +1,11 @@
 # Define your MultiChain node credentials below.
 
-default.name=EMRMultiChain                   # name to display in the web interface
-default.rpchost=147.93.27.72             # IP address of MultiChain node
+default.name=Agrichain                   # name to display in the web interface
+default.rpchost=168.231.121.206             # IP address of MultiChain node
 default.rpcsecure=0                    # set to 1 to access RPC via https (e.g. for MultiChain on Azure)
-default.rpcport=2880                  # usually default-rpc-port from params.dat
+default.rpcport=7182                  # usually default-rpc-port from params.dat
 default.rpcuser=multichainrpc          # username for RPC from multichain.conf
-default.rpcpassword=8YmDStdnxxoQNkErHeEXezuGMF2AhtnUApZJAJhqmZUo                   # password for RPC from multichain.conf
+default.rpcpassword=5wmGNM3jUWZwmqdr2qhT2KAvrLumZgpo9jcsmKUpf267                   # password for RPC from multichain.conf
 
 # You can configure support for other nodes using a word other than 'default':
 #
