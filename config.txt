@@ -1,5 +1,6 @@
 # Define your MultiChain node credentials below.
 
+default.chain=Chain
 default.name=Agrichain                   # name to display in the web interface
 default.rpchost=168.231.121.206             # IP address of MultiChain node
 default.rpcsecure=0                    # set to 1 to access RPC via https (e.g. for MultiChain on Azure)
