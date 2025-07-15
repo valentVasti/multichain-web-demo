@@ -147,7 +147,7 @@ function no_displayed_error_result(&$result, $response)
 
 function html($string)
 {
-	return htmlspecialchars($string);
+	return htmlspecialchars($string ?? '');
 }
 
 function chain_page_url_html($chain, $page = null, $params = array())

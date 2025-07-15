@@ -5,7 +5,7 @@
 	$config=read_config();
 	$chain=@$_GET['chain'];
 	
-	if (strlen($chain))
+	if (strlen($chain ?? ''))
 		$name=@$config[$chain]['name'];
 	else
 		$name='';
@@ -33,7 +33,7 @@
 		<div class="container">
 			<h1><a href="./">MultiChain Demo</a><?php if (strlen($name)) { ?> &ndash; <?php echo html($name)?><?php } ?></h1>
 <?php
-	if (strlen($chain)) {
+	if (strlen($chain ?? '')) {
 		$name=@$config[$chain]['name'];
 ?>
 			
