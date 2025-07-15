@@ -7,7 +7,7 @@
 	
 	$keyforentities=array();
 	for ($forentity=1; $forentity<=const_max_for_entities; $forentity++)
-		if (strlen(@$_POST['for'.$forentity]))
+		if (strlen(@$_POST['for'.$forentity] ?? ''))
 			$keyforentities[$_POST['for'.$forentity]]=true;
 			
 	$restrictions=count($keyforentities) ? array('for' => array_keys($keyforentities)) : false;
@@ -177,7 +177,7 @@
 						<div class="form-group">
 							<label for="code" class="col-sm-3 control-label">Filter code:</label>
 							<div class="col-sm-9">
-								<textarea class="form-control" style="font-family:monospace;" rows="12" name="code" id="code"><?php if (strlen(@$_POST['code'])) echo html($_POST['code']); else {
+								<textarea class="form-control" style="font-family:monospace;" rows="12" name="code" id="code"><?php if (strlen(@$_POST['code'] ?? '')) echo html($_POST['code']); else {
 
 ?>function filtertransaction()
 {
@@ -200,7 +200,7 @@
 		$entities[$asset['issuetxid']]=$asset['name'];
 
 	foreach ($liststreams as $stream)
-		$entities[$stream['createtxid']]=$stream['name'];
+		$entities[$stream['createtxid']]=$stream['name'] ?? 'N/A';
 
 	for ($forentity=1; $forentity<=const_max_for_entities; $forentity++) {
 ?>
@@ -290,7 +290,7 @@
 						<div class="form-group">
 							<label for="rawtx" class="col-sm-3 control-label">Test raw transaction:</label>
 							<div class="col-sm-9">
-								<textarea class="form-control" style="font-family:monospace;" rows="12" name="rawtx" id="rawtx"><?php echo html($_POST['rawtx']);?></textarea>
+								<textarea class="form-control" style="font-family:monospace;" rows="12" name="rawtx" id="rawtx"><?php echo html($_POST['rawtx'] ?? '');?></textarea>
 								<span id="helpBlock" class="help-block">Raw transactions can be created using the <code>multichain-cli</code> command line tool and the <code>createrawsendfrom</code> or <code>createrawtransaction</code> command.</span>
 							</div>
 						</div>
@@ -320,7 +320,7 @@
 						<div class="form-group">
 							<label for="name" class="col-sm-3 control-label">Create filter name:</label>
 							<div class="col-sm-9">
-								<input class="form-control" name="name" id="name" placeholder="filter1" value="<?php echo html($_POST['name'])?>">
+								<input class="form-control" name="name" id="name" placeholder="filter1" value="<?php echo html($_POST['name'] ?? '')?>">
 							</div>
 						</div>
 						<div class="form-group">

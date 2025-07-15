@@ -38,7 +38,7 @@
 						<table class="table table-bordered table-condensed table-break-words <?php echo ($success && ($stream['name']==@$_POST['name'])) ? 'bg-success' : 'table-striped'?>">
 							<tr>
 								<th style="width:30%;">Name</th>
-								<td><?php echo html($stream['name'])?></td>
+								<td><?php echo html($stream['name'] ?? 'N/A')?></td>
 							</tr>
 							<tr>
 								<th>Opened by</th>

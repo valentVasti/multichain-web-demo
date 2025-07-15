@@ -91,7 +91,7 @@
 	foreach ($liststreams as $stream) 
 		if ($stream['name']!='root') {
 ?>
-								<option value="<?php echo html($stream['name'])?>"><?php echo html($stream['name'])?></option>
+								<option value="<?php echo html($stream['name'] ?? 'N/A')?>"><?php echo html($stream['name'] ?? 'N/A')?></option>
 <?php
 		}
 ?>						

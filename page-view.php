@@ -54,7 +54,7 @@
 					else
 						$suffix='';
 ?>	
-								<td><?php echo html($stream['name'])?> &nbsp; <input class="btn btn-default btn-xs" type="submit" name="subscribe_<?php echo html($stream['createtxid'])?>" value="Subscribe<?php echo $suffix?>"></td>
+								<td><?php echo html($stream['name'] ?? 'N/A')?> &nbsp; <input class="btn btn-default btn-xs" type="submit" name="subscribe_<?php echo html($stream['createtxid'])?>" value="Subscribe<?php echo $suffix?>"></td>
 <?php
 				}
 ?>
