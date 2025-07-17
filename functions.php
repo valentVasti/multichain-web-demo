@@ -223,8 +223,8 @@ function multichain_labels()
 	if (!is_array($multichain_labels)) {
 		if (no_displayed_error_result($items, multichain('liststreampublishers', 'root', '*', true, 10000))) {
 			$multichain_labels = array();
-			foreach ($items as $item)
-				$multichain_labels[$item['publisher']] = pack('H*', $item['last']['data']);
+			// foreach ($items as $item)
+				// $multichain_labels[$item['publisher']] = pack('H*', $item['last']['data']);
 		}
 	}
 
