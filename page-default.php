@@ -93,7 +93,7 @@
 		$labels=multichain_labels();
 	
 		foreach ($addressmine as $address => $ismine) {
-			if (count(@$addresspermissions[$address]))
+			if (count(@$addresspermissions[$address] ?? array()) > 0)
 				$permissions=implode(', ', @array_keys($addresspermissions[$address]));
 			else
 				$permissions='none';
