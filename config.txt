@@ -1,13 +1,13 @@
 # Define your MultiChain node credentials below.
 
-default.name=Agrichain-v1                  
-default.rpchost=168.231.121.206             
-default.rpcsecure=0                   
-default.rpcport=7182                 
-default.rpcuser=multichainrpc          
-default.rpcpassword=5wmGNM3jUWZwmqdr2qhT2KAvrLumZgpo9jcsmKUpf267                  
+# default.name=Agrichain-v1                  
+# default.rpchost=168.231.121.206             
+# default.rpcsecure=0                   
+# default.rpcport=7182                 
+# default.rpcuser=multichainrpc          
+# default.rpcpassword=5wmGNM3jUWZwmqdr2qhT2KAvrLumZgpo9jcsmKUpf267                  
 
-prod.name=Agrichain-v2                
+prod.name=Organic Rice SCT                
 prod.rpchost=168.231.121.206  
 prod.rpcsecure=0                    
 prod.rpcport=6810             
