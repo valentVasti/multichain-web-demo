@@ -10,6 +10,6 @@
 prod.name=Organic Rice SCT                
 prod.rpchost=168.231.121.206  
 prod.rpcsecure=0                    
-prod.rpcport=6810             
+prod.rpcport=9544             
 prod.rpcuser=multichainrpc         
-prod.rpcpassword=4NdWTLDNZoWrU15zkhoEGFkdiafcf6U3pZDiRSNxX4bE                  
+prod.rpcpassword=Ea7BDvKeUVH3LeF8MSFsL7yhdw8fC77V2g8epRKVXDJZ                 
